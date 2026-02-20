@@ -6,3 +6,24 @@ Examples:
 sumOfSequence(1, 4, 1) // returns 10 because 1 + 2 + 3 + 4
 sumOfSequence(2, 6, 2) // returns 12 because 2 + 4 + 6
 */
+
+//       PLAN
+//      1. Loop over in a for loop, as the challenge basically puts this in for loop syntax as is.
+//      2. First check if start < end, throw 0 if so, then go into loop.
+
+
+
+function sumOfSequence(start, end, step) {
+    let sumNum = 0;
+    if (start > end) {
+        return sumNum;
+    } else {
+        for (let i = start; i <= end; i += step) { //
+            sumNum += i;
+            console.log(sumNum);
+        }
+    }
+    return sumNum;
+}
+
+sumOfSequence(2, 6, 2);
