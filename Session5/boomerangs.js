@@ -2,7 +2,7 @@
 [3, 7, 3], [1, -1, 1], [2, 9, 2] are all boomerangs
 [1, 3, 2], [5, 5, 5] are NOT boomerangs
 
-Create a function that returns the total number of boomerangs in an array of numbers
+Create a function that returns the total number of boomerangs in an array of numbers*/
 
-
-*/
+//      PLAN
+//      1. 

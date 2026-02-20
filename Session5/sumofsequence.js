@@ -11,8 +11,6 @@ sumOfSequence(2, 6, 2) // returns 12 because 2 + 4 + 6
 //      1. Loop over in a for loop, as the challenge basically puts this in for loop syntax as is.
 //      2. First check if start < end, throw 0 if so, then go into loop.
 
-
-
 function sumOfSequence(start, end, step) {
     let sumNum = 0;
     if (start > end) {
