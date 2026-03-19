@@ -12,7 +12,6 @@ getMiddleChars("Potato");
 
 //Works as expected for words with an even length.
 //As expected, but not as desired for words with an odd length - should take just 1 letter from middle ideally.
-//TODO: refactor to account for this.
 
 function betterGetMiddleChars(wordToProcess) {
     let wordLength = wordToProcess.length;
