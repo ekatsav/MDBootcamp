@@ -1,4 +1,5 @@
-//Either: if 1 == Monday etc etc OR create an array and query the index
+// Either: 
+// if 1 = Monday etc etc OR create an array and query the index
 
 function dayOfWeekActivity(day) {
     //let weekday = false;
@@ -27,3 +28,5 @@ dayOfWeekActivity(7);
     1. Hold weekdays in array and iterate over each index (+1).
         Drawback is it may actually be messier... if day === 1, dayName is Monday etc etc. But could attach weekday status immediately in that switch statement.
 */
+
+//TODO: Add statement of today's day. Eg today is monday.

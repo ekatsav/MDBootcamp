@@ -2,9 +2,8 @@
     Refer to yesterday's material --- append method equivalent maybe?
 */
 
-let text = 'hellauurruurururur';
+let text = 'hi';
 let times = 5;
-// the result should be 'hellohellohello'
 
 function textRepeater(text, repeats) {
     let repeatedArray = [];

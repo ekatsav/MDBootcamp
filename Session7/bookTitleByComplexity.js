@@ -29,7 +29,6 @@ function bookByTitleComplexitySort(array) {
         let currentBookTitle = array[i];
         let overallAsciiValueOfCharacters = 0;
         for (let a = 0; a < currentBookTitle.length; a++) {
-            // console.log(currentBookTitle[i]);
             overallAsciiValueOfCharacters += currentBookTitle.charCodeAt(a);
         }
         let insertIndex = 0;
@@ -37,9 +36,7 @@ function bookByTitleComplexitySort(array) {
             insertIndex++;
         }
         sortedComplexityArray.splice(insertIndex, 0, overallAsciiValueOfCharacters);
-        // console.log(sortedComplexityArray);
         sortedTitleArray.splice(insertIndex, 0, currentBookTitle);
-        // console.log(sortedTitleArray);
     }
     console.log(sortedTitleArray);
     return sortedTitleArray;

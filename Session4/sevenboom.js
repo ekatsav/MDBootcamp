@@ -4,6 +4,9 @@ Examples:
 sevenBoom([1, 2, 3, 5, 7]) => ‘Boom!’
 sevenBoom([1, 2, 3, 5, 9]) => ‘No booming here’
 sevenBoom([1, 2, 3, 5, 97]) => ‘Boom!’
+
+Notes:
+    -To meet criteria 3, I would need to split each array item into a string, and check if contains '7'.
 */
 
 let array1Test = [1, 2, 3, 5, 7];
@@ -30,20 +33,15 @@ let array3Test = [1, 2, 3, 5, 97];
 //     }
 // }
 
-
+//Fancy version just because
 function sevenBoom(array) {
     return array.some(num => num.toString().includes("7")) ? console.log("Boom!") : console.log("No booming here!");
 }
 
 sevenBoom(array3Test);
 
-
-/*Notes:
-    -To meet criteria 3, I would need to split each array item into a string, and check if contains '7'.
-*/
-
-
-/*Further:
+/*Further/TODO:
     -Could make a second parameter for number, so it's not always 7.
-        -Could use 'some' method to avoid the two loops?? ----> Done
+    -Could use 'some' method to avoid the two loops?? ----> Done
+        "The some() method of Array instances returns true if it finds an element in the array that satisfies the provided testing function. Otherwise, it returns false."
 */

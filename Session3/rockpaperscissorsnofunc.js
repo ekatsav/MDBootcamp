@@ -13,7 +13,6 @@ const options = ["Rock", "Paper", "Scissors"];
 let optionRandom = options[Math.floor(Math.random() * options.length)];
 console.log(optionRandom);
 
-
 //TODO: Check for correct input, type and only the three options
 
 function gameGo(playerChoice) {
@@ -29,7 +28,7 @@ function gameGo(playerChoice) {
     console.log(`The computer chose ${optionRandom}, you won!`);
   } else if (optionRandom === "Scissors" && playerChoice == "Paper") {
     console.log(`The computer chose ${optionRandom}, you lost!`);
-   } else if (optionRandom === "Paper" && playerChoice == "Rock") {
+  } else if (optionRandom === "Paper" && playerChoice == "Rock") {
     console.log(`The computer chose ${optionRandom}, you lost!`);
   } else if (optionRandom === "Paper" && playerChoice == "Scissors") {
     console.log(`The computer chose ${optionRandom}, you won!`);
@@ -37,3 +36,5 @@ function gameGo(playerChoice) {
 }
 
 gameGo("Scissors");
+
+//TODO: Add in a best of three limit

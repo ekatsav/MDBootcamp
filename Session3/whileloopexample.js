@@ -11,18 +11,3 @@ while (population <= 1200) {
 console.log(`Population first goes over 1200 after ${year} years`);
 console.log(`Population is: ${population}`);
 
-//Ask the user for input and continue until the user decides to exit or provides an answer that the program requires to exit
-
-// program to find the sum of positive numbers
-// if the user enters a negative numbers, the loop ends
-// the negative number entered is not added to sum
-let sum = 0;
-// take input from the user
-let number = parseInt(prompt('Enter a number: '));
-while(number >= 0) {
-    sum += number; // add all positive numbers
-    // take input again if the number is positive
-    number = parseInt(prompt('Enter a number: '));
-}
-console.log(`The sum is ${sum}.`); // display the sum
-

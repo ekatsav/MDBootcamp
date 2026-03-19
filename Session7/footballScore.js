@@ -19,8 +19,6 @@ function scoreArrayGenerator() {
     return seasonScoreArray;
 }
 
-// scoreArrayGenerator();
-
 //      GENERATE AN OVERALL SCORE FOR THE HOME TEAM 
 
 //      PLAN

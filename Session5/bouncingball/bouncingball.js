@@ -10,13 +10,12 @@ How many times will the mother see the ball pass her window (including the time 
 */
 
 /*PSEUDOCODE/GAMEPLAN
-        >Work out logic on paper
-
-            >If h > 1.5 THEN go into logic, otherwise throw error
-            >Each bounce is 2/3 of previous > this will be formatted by a for loop. Can also be done with a while bounceHeight >= 1.5?
-            >No, has to be a while loop I think?
-            >for (let i = h; i >= 1.5; ??? )
-            >set bounceHeight to 0, track. Has to be higher than 1.5. If lower, exit loop
+        > Work out logic on paper
+            > If h > 1.5 THEN go into logic, otherwise throw error
+            > Each bounce is 2/3 of previous > this will be formatted by a for loop. Can also be done with a while bounceHeight >= 1.5?
+            > No, has to be a while loop I think?
+            > for (let i = h; i >= 1.5; ??? )
+            > set bounceHeight to 0, track. Has to be higher than 1.5. If lower, exit loop
             > On first bounce, it only adds one pass, therefore bounces has to be started at 1?
             > On consequent bounces, up to height of 1.5, adds 2.
             > on last bounce (if 1.5 exactly?) only adds 1.
@@ -39,4 +38,4 @@ How many times will the mother see the ball pass her window (including the time 
     return numberOfBallBouncesObserved;
 }
 
-numberOfBallPassesByWindow(1.6);
+numberOfBallPassesByWindow(30);
