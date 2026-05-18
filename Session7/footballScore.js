@@ -10,9 +10,12 @@
 //      5. Append the score strings to your array.
 //      6. Return array. For extra cred(??) we *could* export the arrays into a .json file for storage, and pass that into the tally function instead of the function itself.
 
+const MATCHES_PER_SEASON = 38;
+
+
 function scoreArrayGenerator() {
     let seasonScoreArray = [];
-    for (let i = 0; i < 38; i++) {
+    for (let i = 0; i < MATCHES_PER_SEASON; i++) {
         let scoreEntry = `${Math.floor((Math.random() * 4 ))}:${Math.floor((Math.random() * 4 ))}`;
         seasonScoreArray.push(scoreEntry);
     }
@@ -45,3 +48,10 @@ function seasonScoreTally(array) {
 }
 
 seasonScoreTally(scoreArrayGenerator());
+
+// LOTS OF MAGIC NUMBERS IN HERE FROM FOOTBALL NONESENSE HAHAH
+// > The 38 matches per season is in the loop with no explanation -> Fixed this into a constant
+
+// > The 3, 0 and 1 points are in the if statement with no explanation
+// > The 4 in the random number generator is in there with no explanation (it is the range of possible scores, but that is not clear from the code itself)
+// > The charAt(0) and charAt(2) are in there with no explanation (they are the home and away scores, but that is not clear from the code itself)

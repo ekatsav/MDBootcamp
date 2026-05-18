@@ -25,11 +25,12 @@ How many times will the mother see the ball pass her window (including the time 
     function numberOfBallPassesByWindow(height) {
     let numberOfBallBouncesObserved = -1; //To account for first instance only passing 1.5m once, fall only.
     let bounceHeight = height;
-    const windowHeight = 1.5;
-    if (height < windowHeight) {
+    const WINDOW_HEIGHT = 1.5;
+    const BOUNCE_REDUCTION_FACTOR = 0.66;
+    if (height < WINDOW_HEIGHT) {
         throw new Error('Height of drop must be higher than window height!');
-    } while (bounceHeight > windowHeight) {
-        bounceHeight = bounceHeight * 0.66;
+    } while (bounceHeight > WINDOW_HEIGHT) {
+        bounceHeight = bounceHeight * BOUNCE_REDUCTION_FACTOR;
         console.log(bounceHeight);
         numberOfBallBouncesObserved += 2;
         console.log(numberOfBallBouncesObserved);
@@ -39,3 +40,6 @@ How many times will the mother see the ball pass her window (including the time 
 }
 
 numberOfBallPassesByWindow(30);
+
+// Renamed const with capital letters to indicate it is a constant
+// Made the 0.66 a constant to make it clearer what it is and to avoid magic numbers in the code

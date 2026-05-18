@@ -43,3 +43,5 @@ function bookByTitleComplexitySort(array) {
 }
 
 bookByTitleComplexitySort(unsortedArray);
+
+// I think the naming here is already pretty detailed
